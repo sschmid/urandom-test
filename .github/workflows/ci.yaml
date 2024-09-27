@@ -9,4 +9,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
-          head -n 80 /dev/urandom | LC_CTYPE="C" LC_ALL="C" tr -dc '[:graph:]'
+          head -c 10 /dev/urandom | LC_CTYPE="C" LC_ALL="C" tr -dc '[:graph:]'
