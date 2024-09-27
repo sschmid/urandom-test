@@ -10,5 +10,5 @@ jobs:
     steps:
       - run: |
           # head -c 10 /dev/urandom | LC_CTYPE="C" LC_ALL="C" tr -dc '[:graph:]'
-          password="$(LC_CTYPE=C tr -dc '[:graph:]' < /dev/urandom | head -c 4 || true)"
+          password="$(LC_CTYPE=C LC_ALL=C tr -dc '[:graph:]' < /dev/urandom | head -c 4 || true)"
           echo "${password}"
