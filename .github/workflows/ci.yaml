@@ -10,4 +10,5 @@ jobs:
     steps:
       - run: |
           export LC_CTYPE=C
+          export LANG=C
           tr -dc "[:graph:]" < /dev/urandom | head -c 4
