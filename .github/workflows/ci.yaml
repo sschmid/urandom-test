@@ -9,13 +9,5 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
-          export LANG=C
-          export LC_COLLATE=C
-          export LC_CTYPE=C
-          export LC_MESSAGES=C
-          export LC_MONETARY=C
-          export LC_NUMERIC=C
-          export LC_TIME=C
-          export LC_ALL=C
-          tr -dc "[:graph:]" < /dev/urandom | head -c 4
+          LC_CTYPE="C" LC_ALL="" tr -dc "[:graph:]" < /dev/urandom | head -c 4
 
