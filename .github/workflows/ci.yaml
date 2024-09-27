@@ -9,5 +9,5 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
-          tr -dc '[:graph:]' < /dev/urandom | iconv -c -f UTF-8 -t UTF-8 | head -c 4
+          LC_CTYPE=C tr -dc '[:graph:]' < /dev/urandom | iconv -c -f UTF-8 -t UTF-8 | head -c 4
 
