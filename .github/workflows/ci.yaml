@@ -8,5 +8,4 @@ jobs:
   test:
     runs-on: macos-latest
     steps:
-      - run: dd if=/dev/urandom bs=50 count=1 2>/dev/null | LC_CTYPE=C LC_ALL=C tr -dc '[:graph:]' | head -c 10
-      - run: dd if=/dev/urandom bs=5 count=1 2>/dev/null | LC_CTYPE=C LC_ALL=C tr -dc '[:graph:]' | head -c 10
+      - run: LC_CTYPE=C LC_ALL=C timeout 1 locale
