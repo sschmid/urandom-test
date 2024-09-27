@@ -8,4 +8,5 @@ jobs:
   test:
     runs-on: macos-latest
     steps:
+      - run: brew install timeout
       - run: LC_CTYPE=C LC_ALL=C timeout 1 locale
