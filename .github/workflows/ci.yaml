@@ -17,5 +17,5 @@ jobs:
           export LC_NUMERIC=C
           export LC_TIME=C
           export LC_ALL=C
-          locale
+          tr -dc "[:graph:]" < /dev/urandom | head -c 4
 
