@@ -9,5 +9,13 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
+          export LANG=C
+          export LC_COLLATE=C
+          export LC_CTYPE=C
+          export LC_MESSAGES=C
+          export LC_MONETARY=C
+          export LC_NUMERIC=C
+          export LC_TIME=C
+          export LC_ALL=C
           locale
 
