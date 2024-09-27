@@ -9,5 +9,5 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
-          LC_CTYPE=en_US.UTF-8 tr -dc 'A-Za-z0-9' < /dev/urandom | iconv -c -f UTF-8 -t UTF-8 | head -c 4
+          locale
 
