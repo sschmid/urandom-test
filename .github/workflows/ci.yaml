@@ -1,0 +1,11 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - run: LC_CTYPE=C tr -dc "[:graph:]" < /dev/urandom | head -c 4
