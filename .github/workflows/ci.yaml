@@ -9,6 +9,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
-          export LC_CTYPE=C
-          export LANG=C
-          tr -dc "[:graph:]" < /dev/urandom | head -c 4
+          LC_CTYPE=C LANG=C tr -dc "[:graph:]" < /dev/urandom | head -c 4
