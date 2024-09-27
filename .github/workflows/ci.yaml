@@ -9,5 +9,5 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
-          x="$(LC_CTYPE="C" LC_ALL="" tr -dc '[:graph:]' < /dev/urandom | head -c 4 || true)"
-          echo $x
+          timeout 1s LC_CTYPE="C" LC_ALL="C" tr -dc '[:graph:]' < /dev/urandom | head -c 4
+
