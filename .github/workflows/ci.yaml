@@ -14,5 +14,4 @@ jobs:
           test
           test
           EOF
-          
-      - run: open -a "KeePassXC" ~/test.kdbx
+          open /Applications/KeePassXC.app
