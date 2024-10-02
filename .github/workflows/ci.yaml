@@ -9,9 +9,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
-          brew install --cask keepassxc
-          keepassxc-cli db-create --quiet --set-password ~/test.kdbx << EOF
-          test
-          test
-          EOF
-          open /Applications/KeePassXC.app ~/test.kdbx
+          open -a "Keychain Access" "${HOME}/Library/Keychains/login.keychain-db
