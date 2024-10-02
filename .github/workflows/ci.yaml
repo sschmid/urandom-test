@@ -9,5 +9,9 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
-          open ~
-          echo "Success: $?"
+          brew install --cask keepassxc
+          keepassxc-cli db-create --quiet --set-password ~/test.kdbx << EOF
+          test
+          test
+          EOF
+          open -a "KeePassXC" ~/test.kdbx
