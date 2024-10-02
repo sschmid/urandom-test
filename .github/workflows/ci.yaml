@@ -8,4 +8,4 @@ jobs:
   test:
     runs-on: macos-latest
     steps:
-      - run: dd if=/dev/urandom bs=50 count=1 2>/dev/null | LC_CTYPE=C LC_ALL=C tr -dc '[:graph:]' | head -c 10
+      - run: open ~
