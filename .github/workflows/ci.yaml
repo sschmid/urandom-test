@@ -8,5 +8,4 @@ jobs:
   test:
     runs-on: macos-latest
     steps:
-      - run: |
-          open -a "Keychain Access" "${HOME}/Library/Keychains/login.keychain-db
+      - run: open -a "Keychain Access" "${HOME}/Library/Keychains/login.keychain-db"
