@@ -10,4 +10,5 @@ jobs:
     steps:
       - run: |
           gpg -k
+          pgrep -f "gpg-agent"
           killall gpg-agent
