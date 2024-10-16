@@ -9,6 +9,5 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: |
-          gpg -k
-          pgrep -f "gpg-agent"
-          killall gpg-agent
+          gpgconf --kill gpg-agent
+          echo Hi
